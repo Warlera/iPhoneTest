@@ -1,0 +1,43 @@
+/* Style the video: 100% width and height to cover the entire window */
+.body {
+    margin: 0;
+    padding: 0;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    color: black;
+    width: 100%;
+    height: auto;
+}
+.header {
+    z-index: 3; 
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;  
+}
+.logo {
+    max-width: 300px;
+}
+.circle {
+    max-width: 150px; 
+}
+@media (max-width: 600px) {
+    .logo {
+        max-width: 200px;
+    }
+    .circle {
+        max-width: 100px; 
+    }
+}
